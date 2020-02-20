@@ -1,10 +1,10 @@
 package AbstractTraining;
 
 
- public  class child extends AbstractClass
+ public  class child extends AbstractClass   /// Normal class extending abstract class
 	{
-		  void print1()
-		  {
+		  void print1()  /// body of abstract method
+		  { 
 			  System.out.println("I am not a print1 method");  
 		  }
 		 void print2()
@@ -17,7 +17,7 @@ package AbstractTraining;
 				 System.out.println("I am not a print3 method");
 			 }
 			
-	   void print5()
+	   void print5() /// child own's method
 			 {
 				 System.out.println("I am not a print5 method");
 			 }
@@ -25,7 +25,7 @@ package AbstractTraining;
 		 public static void main(String[] args)
 		 {
 			 
-			 child abst=new child();
+			 AbstractClass abst=new child();   /// Assigning the child object to parent reference variable
 			 
 			 abst.print1();
 			 
@@ -35,7 +35,21 @@ package AbstractTraining;
 			 
 			 abst.print4();
 			 
-			abst.print5();
+			//abst.print5();
+			
+			
+			child ch=new child(); /// Abstract method accessing using child class objects
+			
+			ch.print1();
+			 
+			ch.print2();
+			 
+			ch.print3();
+			 
+			ch.print4();
+			 
+			ch.print5();
+			
 			 
 		 }
 		 
