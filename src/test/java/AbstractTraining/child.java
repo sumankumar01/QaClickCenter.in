@@ -5,7 +5,8 @@ package AbstractTraining;
 	{
 		  void print1()  /// body of abstract method
 		  { 
-			  System.out.println("I am not a print1 method");  
+			  System.out.println("I am not a print1 method");
+		  
 		  }
 		 void print2()
 			 {
